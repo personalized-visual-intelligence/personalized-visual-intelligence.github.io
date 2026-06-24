@@ -54,6 +54,10 @@ h3 {
   line-height: 25px;
 }
 
+b, strong {
+    font-weight: 700;
+}
+
 .page-header {
   margin-top: 20px;
   /*border-color: #3498db;*/
