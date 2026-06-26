@@ -233,7 +233,7 @@ pre {
     align-items: center;
     text-align: center;
     flex: 0 0 auto;
-    width: 135px;
+    width: 140px;
 }
 .instructorphoto img {
     width: 135px;
@@ -244,6 +244,10 @@ pre {
 }
 .instructor a {
     border-bottom: none;
+}
+.instructor-institute {
+    font-size: 16px;
+
 }
 
 .important {
