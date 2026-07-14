@@ -32,6 +32,28 @@
             border-left: 4px solid #2a5298;
         }
 
+        /*custom table*/
+        .custom-table-modern {
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+        .custom-table-modern thead th {
+            background-color: #f1f5f9;
+            color: #475569;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            padding: 16px 24px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        .custom-table-modern tbody td {
+            padding: 20px 24px;
+            border-bottom: 1px solid #f1f5f9;
+            transition: all 0.2s ease;
+        }
+        .custom-table-modern tbody tr:nth-child(even) td {
+            background-color: #f8fafc;
+        }
     </style>
 </head>
 <body>
@@ -272,11 +294,11 @@
     </section>
 
     <!-- Schedule Section -->
-    <section id="schedule" class="py-5 bg-schedule">
+    <!-- <section id="schedule" class="py-5 bg-schedule">
         <div class="container">
             <h2 class="text-center fw-bold mb-4">Event Schedule</h2>
             <div class="table-responsive bg-white shadow-sm rounded border">
-                <table class="table table-hover align-middle mb-0">
+                <table class="table table-striped table-hover align-middle mb-0">
                     <thead class="table-dark">
                         <tr>
                             <th style="width: 25%">Time</th>
@@ -303,7 +325,7 @@
                         <tr>
                             <td class="fw-bold text-primary">10:10-10:45</td>
                             <td><strong>Invited talk #3</strong></td>
-                            <td class="text-muted">tba</td>
+                            <td>tba</td>
                         </tr>
                         <tr>
                             <td class="fw-bold text-primary">10:45-11:20</td>
@@ -314,6 +336,55 @@
                             <td class="fw-bold text-primary">11:20-12:00</td>
                             <td><strong>Challenge Summary</strong></td>
                             <td>Organizers</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="schedule" class="py-5 bg-schedule">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Event Schedule</h2>
+            <div class="table-responsive shadow-sm rounded-4 border-0">
+                <table class="table table-hover align-middle mb-0 custom-table-modern">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%">Time</th>
+                            <th style="width: 50%">Session Title</th>
+                            <th style="width: 25%">Speaker</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold text-primary">08:45-09:00</td>
+                            <td><span class="fw-bold text-dark">Opening Remarks</span></td>
+                            <td><span class="text-muted">tba</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold text-primary">09:00-09:35</td>
+                            <td><span class="fw-bold text-dark">Invited talk #1</span></td>
+                            <td><span class="text-muted">tba</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold text-primary">09:35-10:10</td>
+                            <td><span class="fw-bold text-dark">Invited talk #2</span></td>
+                            <td><span class="text-muted">tba</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold text-primary">10:10-10:45</td>
+                            <td><span class="fw-bold text-dark">Invited talk #3</span></td>
+                            <td><span class="text-muted">tba</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold text-primary">10:45-11:20</td>
+                            <td><span class="fw-bold text-dark">Invited talk #4</span></td>
+                            <td><span class="text-muted">tba</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold text-primary">11:20-12:00</td>
+                            <td><span class="fw-bold text-dark">Challenge Summary</span></td>
+                            <td><span class="text-muted">Organizers</span></td>
                         </tr>
                     </tbody>
                 </table>
